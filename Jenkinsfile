@@ -22,6 +22,7 @@ node('php'){
             }
         )
     }
+    
     stage('Docker Build') {
         sh 'docker build -t fernandokarpinski/todoapi:$BUILD_NUMBER .'
     }
